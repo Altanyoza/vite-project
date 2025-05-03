@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom'
 
 class Footer extends PureComponent {
     constructor(props) {
@@ -11,7 +12,13 @@ class Footer extends PureComponent {
 
     render() {
         return (
-            <div>fg</div>
+            <footer className="bg-gray-800 text-white p-4 mt-auto">
+                <div className="flex justify-center gap-6">
+                    <Link to="/" className="hover:underline mx-2">Home</Link>
+                    <Link to="/about" className="hover:underline mx-2">About</Link>
+                    <Link to="/blog" className="hover:underline mx-2">Blog</Link>
+                </div>
+            </footer>
         )
     }
 }
