@@ -12,13 +12,9 @@ class Footer extends PureComponent {
 
     render() {
         return (
-            <footer className="bg-gray-800 text-white p-4 mt-auto">
-                <div className="flex justify-center gap-6">
-                    <Link to="/" className="hover:underline mx-2">Home</Link>
-                    <Link to="/about" className="hover:underline mx-2">About</Link>
-                    <Link to="/blog" className="hover:underline mx-2">Blog</Link>
-                </div>
-            </footer>
+            <div class="bg-cyan-600 w-full mx-auto py-4 h-[calc(100vh-550px)] mt-[30px]">
+            +7(914)220-92-79
+        </div>
         )
     }
 }

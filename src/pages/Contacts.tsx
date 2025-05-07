@@ -1,10 +1,9 @@
 import React, { PureComponent, ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 
 interface Props {}
 interface State {}
 
-class About extends PureComponent<Props, State> {
+class Contacts extends PureComponent<Props, State> {
     constructor(props: Props) {
         super(props)
 
@@ -15,12 +14,12 @@ class About extends PureComponent<Props, State> {
 
     render(): ReactNode {
         return (
-          <div>
-          <h1>Блог</h1>
-          <p>Статьи и новости о якутских ножах.</p>
-        </div>
+            <div>
+      <h1>Блог</h1>
+      <p>Статьи и новости о якутских ножах.</p>
+    </div>
         )
     }
 }
 
-export default About
+export default Contacts

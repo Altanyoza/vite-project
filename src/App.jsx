@@ -7,7 +7,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Blog from './pages/Blog'
+import Catalog from './pages/Catalog'
+import Contacts from './pages/Contacts'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </main>
         <Footer />

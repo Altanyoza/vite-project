@@ -15,11 +15,10 @@ class Home extends PureComponent<Props, State> {
 
     render(): ReactNode {
         return (
-            <div className="min-h-screen flex flex-col">
-                <main className="flex-grow p-4">
-                    <h1 className="text-3xl font-bold">Home Page</h1>
-                </main>
-            </div>
+            <div>
+      <h1>Блог</h1>
+      <p>Статьи и новости о якутских ножах.</p>
+    </div>
         )
     }
 }

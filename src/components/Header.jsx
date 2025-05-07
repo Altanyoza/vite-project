@@ -12,13 +12,12 @@ class Header extends PureComponent {
 
     render() {
         return (
-            <header className="bg-blue-600 text-white p-4">
-                <nav className="flex gap-4">
-                    <Link to="/" className="hover:underline px-2 py-1">Home</Link>
-                    <Link to="/about" className="hover:underline px-2 py-1">About</Link>
-                    <Link to="/blog" className="hover:underline px-2 py-1">Blog</Link>
-                </nav>
-            </header>
+            <div class="bg-neutral-300 py-2.5">
+                <a href='/' className='text-2x1 m-1 border-r-2'>Главная</a>
+                <a href='/catalog' className='text-2x1 m-1 border-r-2'>Каталог</a>
+                <a href='/about' className='text-2x1 m-1 border-r-2'>О нас</a>
+                <a href='/contacts' className='text-2x1 m-1 border-r-2'>Контакты</a>
+            </div>
         )
     }
 }
