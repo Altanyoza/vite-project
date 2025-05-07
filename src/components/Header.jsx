@@ -12,13 +12,39 @@ class Header extends PureComponent {
 
     render() {
         return (
-            <div class="bg-neutral-300 py-2.5">
-                <a href='/' className='text-2x1 m-1 border-r-2'>Главная</a>
-                <a href='/catalog' className='text-2x1 m-1 border-r-2'>Каталог</a>
-                <a href='/about' className='text-2x1 m-1 border-r-2'>О нас</a>
-                <a href='/contacts' className='text-2x1 m-1 border-r-2'>Контакты</a>
-            </div>
-        )
+            <header className="bg-gray-800 shadow-lg">
+                <nav className="container mx-auto px-4 py-3">
+                    <div className="flex justify-end"> {/* Изменено на justify-end для выравнивания вправо */}
+                        <div className="flex space-x-6">
+                            <Link 
+                                to="/" 
+                                className="text-white hover:text-amber-400 transition-colors duration-300 text-lg font-medium px-3 py-2 rounded hover:bg-gray-700"
+                            >
+                                Главная
+                            </Link>
+                            <Link 
+                                to="/catalog" 
+                                className="text-white hover:text-amber-400 transition-colors duration-300 text-lg font-medium px-3 py-2 rounded hover:bg-gray-700"
+                            >
+                                Каталог
+                            </Link>
+                            <Link 
+                                to="/about" 
+                                className="text-white hover:text-amber-400 transition-colors duration-300 text-lg font-medium px-3 py-2 rounded hover:bg-gray-700"
+                            >
+                                О нас
+                            </Link>
+                            <Link 
+                                to="/contacts" 
+                                className="text-white hover:text-amber-400 transition-colors duration-300 text-lg font-medium px-3 py-2 rounded hover:bg-gray-700"
+                            >
+                                Контакты
+                            </Link>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        );
     }
 }
 
