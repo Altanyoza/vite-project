@@ -1,5 +1,7 @@
+import Container_ from 'postcss/lib/container'
 import React, { PureComponent, ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import Input from '../components/Input'
 
 interface Props {}
 interface State {}
@@ -15,11 +17,9 @@ class About extends PureComponent<Props, State> {
 
     render(): ReactNode {
         return (
-          <div>
-          <h1>Блог</h1>
-          <p>Статьи и новости о якутских ножах.</p>
-        </div>
+            <div></div>
         )
+    
     }
 }
 
